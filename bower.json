@@ -1,6 +1,6 @@
 {
-  "name": "superheroMEANApp",
-  "description": "superhero database",
+  "name": "superheroes",
+  "description": "superheroes",
   "main": "server.js",
   "authors": [
     "Seth Bergman"
