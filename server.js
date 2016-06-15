@@ -10,7 +10,7 @@ var superhero = require('./app/routes/superhero')();
 var options = { server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } },
                 replset: { socketOptions: { keepAlive: 1, connectTimeoutMS : 30000 } } };
 
-mongoose.connect('mongodb://stackriot:stackpass123@ds023593.mlab.com:23593/filestacker', options);
+mongoose.connect('MONGODB_URL', options);
 var db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -32,6 +32,6 @@ app.route('/superhero')
 app.route('/superhero/:id')
 	.get(superhero.getOne);
 
-var server = app.listen(process.env.PORT | 5000, function () {
+var server = app.listen(process.env.PORT || 5000, function () {
   console.log('Server running at http://0.0.0.0:' + server.address().port)
 })
