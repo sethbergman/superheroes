@@ -10,7 +10,6 @@ var superhero = require('./app/routes/superhero')();
 var options = { server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } },
                 replset: { socketOptions: { keepAlive: 1, connectTimeoutMS : 30000 } } };
 
-var configDB = require('./config/database.js');
 
 mongoose.connect('mongodb://stackriot:stackpass123@ds023593.mlab.com:23593/filestacker', options);
 var db = mongoose.connection;
