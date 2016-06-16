@@ -17,9 +17,8 @@ var db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
 
-//Log with Morgan
+
 app.use(morgan('dev'));
-//parse application/json and look for raw text
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
