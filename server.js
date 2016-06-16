@@ -12,7 +12,7 @@ var options = { server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000
 
 var configDB = require('./config/database.js');
 
-mongoose.connect(configDB.url, options);
+mongoose.connect('mongodb://stackriot:stackpass123@ds023593.mlab.com:23593/filestacker', options);
 var db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
