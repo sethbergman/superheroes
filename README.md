@@ -1,6 +1,8 @@
 # superheroes
 ##### A simple MEAN app to show the use of filestacker.
 ------------------------------------
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/sethbergman/superheroes.svg)](https://greenkeeper.io/)
 [ ![Codeship Status for sethbergman/superheroes](https://codeship.com/projects/786f6e90-157c-0134-48ed-06f03778d1be/status?branch=master)](https://codeship.com/projects/158109)
 
 ### Clone
