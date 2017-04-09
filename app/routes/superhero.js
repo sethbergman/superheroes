@@ -27,6 +27,7 @@ module.exports = function() {
 				if(err) res.send(err);
 				//If no errors, send it back to the client
 				res.json(req.body);
+				getAll()
 			});
 		},
 		/*
@@ -37,7 +38,7 @@ module.exports = function() {
 				if(err) res.send(err);
 				//If no errors, send it back to the client
 				res.json(superhero);
-			});		
+			});
 		}
 	}
-};  
+};
